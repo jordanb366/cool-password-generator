@@ -67,11 +67,10 @@ var passwordLength = prompt("Password must be between 8 Characters and 128. How 
       console.log(characterCriteriaPool);
             
  //Loop through password length
-for (var i = 0; i <= passwordLength; i++) {
+  for (var i = 0; i <= passwordLength; i++) {
    //generate the random password
   var randomPassword = Math.floor(Math.random() * characterCriteriaPool.length);
  password += characterCriteriaPool.substring(randomPassword, randomPassword +1);
- //}
 }
   return(password);      
   // If no criteria is selected an alert will pop up
